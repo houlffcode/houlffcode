@@ -1727,3 +1727,482 @@ footer p {
     display: block;
     margin: 0 auto 25px;
 }
+
+
+
+/* =========================================================
+   AJUSTES FINAIS
+   ========================================================= */
+
+
+/* =========================================================
+   CORES DOS LINKS DO MENU
+   ========================================================= */
+
+.desktop-nav a,
+.desktop-nav a:link,
+.desktop-nav a:visited,
+.desktop-nav a:hover,
+.desktop-nav a:active,
+.mobile-nav a,
+.mobile-nav a:link,
+.mobile-nav a:visited,
+.mobile-nav a:hover,
+.mobile-nav a:active {
+    color: #111111;
+    text-decoration: none;
+}
+
+/* Efeito ao passar o mouse no menu mobile */
+
+.mobile-nav a:hover,
+.mobile-nav a:active {
+    color: #111111;
+    background-color: #f5f5f5;
+}
+
+/* Botão Solicitar Projeto no menu mobile */
+
+.mobile-menu .mobile-project-btn,
+.mobile-menu .mobile-project-btn:link,
+.mobile-menu .mobile-project-btn:visited,
+.mobile-menu .mobile-project-btn:hover,
+.mobile-menu .mobile-project-btn:active {
+    color: #ffffff;
+    background-color: #111111;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   CORRECAO DO ALINHAMENTO DE SERVICOS
+   ========================================================= */
+
+/*
+   Remove o max-width que deixava Serviços mais para dentro.
+   Agora Serviços segue os mesmos 8% de padding das outras seções.
+*/
+
+#servicos > h2,
+#servicos .info-box {
+    width: 100%;
+    max-width: none;
+
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* Título */
+
+#servicos > h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    text-align: left;
+}
+
+/* Container abaixo do título */
+
+#servicos .info-box {
+    margin-top: 0;
+}
+
+/* Descrição */
+
+#servicos .info-box > p {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0;
+
+    text-align: left;
+}
+
+/* Botões */
+
+#servicos .partner-buttons {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+/* Cards ocupando corretamente a largura da seção */
+
+#servicesContent {
+    width: 100%;
+}
+
+
+/* =========================================================
+   IPHONE MENOR - DESKTOP GRANDE
+   ========================================================= */
+
+@media (min-width: 1201px) {
+
+    .iphone {
+        width: 300px;
+        height: 625px;
+        padding: 10px;
+
+        border-radius: 50px;
+    }
+
+    .notch {
+        top: 16px;
+
+        width: 106px;
+        height: 30px;
+    }
+
+    .screen {
+        padding: 60px 11px 11px;
+        border-radius: 41px;
+    }
+
+    .phone-header {
+        gap: 10px;
+        margin-bottom: 14px;
+    }
+
+    .phone-header img {
+        width: 29px;
+        height: 29px;
+    }
+
+    .phone-header span {
+        font-size: 19px;
+    }
+
+    .dashboard-card {
+        min-height: 190px;
+        padding: 10px;
+    }
+
+    .dashboard-large {
+        min-height: 220px;
+    }
+
+    .counter {
+        font-size: 24px;
+    }
+
+    .graph {
+        height: 56px;
+    }
+
+    .dashboard-card p {
+        font-size: 10px;
+        line-height: 1.3;
+    }
+}
+
+
+/* =========================================================
+   IPHONE MENOR - NOTEBOOK
+   ========================================================= */
+
+@media (max-width: 1200px) and (min-width: 1025px) {
+
+    .iphone {
+        width: 285px;
+        height: 600px;
+        padding: 9px;
+
+        border-radius: 47px;
+    }
+
+    .notch {
+        top: 15px;
+
+        width: 102px;
+        height: 28px;
+    }
+
+    .screen {
+        padding: 57px 10px 10px;
+        border-radius: 39px;
+    }
+
+    .phone-header {
+        gap: 9px;
+        margin-bottom: 13px;
+    }
+
+    .phone-header img {
+        width: 27px;
+        height: 27px;
+    }
+
+    .phone-header span {
+        font-size: 18px;
+    }
+
+    .dashboard-card {
+        min-height: 182px;
+        padding: 9px;
+    }
+
+    .dashboard-large {
+        min-height: 210px;
+    }
+
+    .counter {
+        font-size: 23px;
+    }
+
+    .graph {
+        height: 53px;
+    }
+
+    .dashboard-card p {
+        font-size: 10px;
+        line-height: 1.3;
+    }
+}
+
+
+/* =========================================================
+   IPHONE MENOR - TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .iphone {
+        width: min(295px, calc(100vw - 60px));
+        height: 650px;
+        padding: 9px;
+
+        border-radius: 44px;
+    }
+
+    .notch {
+        top: 14px;
+
+        width: 98px;
+        height: 27px;
+    }
+
+    .screen {
+        padding: 51px 9px 10px;
+        border-radius: 36px;
+    }
+
+    .phone-header {
+        gap: 8px;
+        margin-bottom: 11px;
+    }
+
+    .phone-header img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .phone-header span {
+        font-size: 16px;
+    }
+
+    .dashboard-card,
+    .dashboard-large {
+        min-height: 152px;
+        padding: 9px;
+
+        grid-template-columns: 66px minmax(0, 1fr);
+        column-gap: 7px;
+
+        border-radius: 17px;
+    }
+
+    .counter {
+        font-size: 20px;
+    }
+
+    .graph {
+        height: 54px;
+    }
+
+    .dashboard-card p {
+        max-width: 66px;
+
+        font-size: 9px;
+        line-height: 1.25;
+    }
+}
+
+
+/* =========================================================
+   IPHONE MENOR - MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .iphone-container {
+        margin-top: 45px;
+    }
+
+    .iphone {
+        width: min(260px, calc(100vw - 56px));
+        height: 600px;
+        padding: 8px;
+
+        border-radius: 41px;
+    }
+
+    .notch {
+        top: 12px;
+
+        width: 90px;
+        height: 25px;
+    }
+
+    .screen {
+        padding: 47px 8px 9px;
+        border-radius: 34px;
+    }
+
+    .phone-header {
+        gap: 7px;
+        margin-bottom: 9px;
+    }
+
+    .phone-header img {
+        width: 23px;
+        height: 23px;
+    }
+
+    .phone-header span {
+        font-size: 15px;
+    }
+
+    .dashboard-top {
+        gap: 7px;
+    }
+
+    .dashboard-bottom {
+        margin-top: 7px;
+    }
+
+    .dashboard-card,
+    .dashboard-large {
+        min-height: 143px;
+        padding: 8px;
+
+        grid-template-columns: 59px minmax(0, 1fr);
+        column-gap: 6px;
+
+        border-radius: 15px;
+    }
+
+    .counter {
+        font-size: 18px;
+    }
+
+    .graph {
+        height: 48px;
+    }
+
+    .graph path {
+        stroke-width: 4;
+    }
+
+    .dashboard-card p {
+        max-width: 59px;
+
+        font-size: 8px;
+        line-height: 1.2;
+    }
+}
+
+
+/* =========================================================
+   IPHONE MENOR - CELULARES PEQUENOS
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .iphone {
+        width: min(240px, calc(100vw - 54px));
+        height: 570px;
+        padding: 7px;
+
+        border-radius: 38px;
+    }
+
+    .notch {
+        top: 11px;
+
+        width: 84px;
+        height: 23px;
+    }
+
+    .screen {
+        padding: 44px 7px 8px;
+        border-radius: 31px;
+    }
+
+    .phone-header {
+        gap: 6px;
+        margin-bottom: 8px;
+    }
+
+    .phone-header img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .phone-header span {
+        font-size: 14px;
+    }
+
+    .dashboard-card,
+    .dashboard-large {
+        min-height: 137px;
+        padding: 7px;
+
+        grid-template-columns: 54px minmax(0, 1fr);
+        column-gap: 5px;
+
+        border-radius: 14px;
+    }
+
+    .counter {
+        font-size: 17px;
+    }
+
+    .graph {
+        height: 45px;
+    }
+
+    .dashboard-card p {
+        max-width: 54px;
+
+        font-size: 7.5px;
+        line-height: 1.2;
+    }
+}
+
+/* Impede que as opções dos menus fiquem azuis */
+
+.desktop-nav a,
+.desktop-nav a:link,
+.desktop-nav a:visited,
+.desktop-nav a:hover,
+.desktop-nav a:active,
+.mobile-menu a,
+.mobile-menu a:link,
+.mobile-menu a:visited,
+.mobile-menu a:hover,
+.mobile-menu a:active {
+    color: #111111;
+    text-decoration: none;
+}
+
+/* Mantém o botão Solicitar Projeto branco no menu mobile */
+
+.mobile-menu .btn-primary,
+.mobile-menu .btn-primary:link,
+.mobile-menu .btn-primary:visited,
+.mobile-menu .btn-primary:hover,
+.mobile-menu .btn-primary:active {
+    color: #ffffff;
+    background-color: #111111;
+    text-decoration: none;
+}
